@@ -395,8 +395,13 @@ header {
   font-family: Rufina;
   font-weight: 600;
 }
+.header_content .header_content_second {
+  border-radius: 20px;
+}
 .header_content .header_content_second img {
   width: 45rem;
+  width: 45rem;
+  border-radius: 50%;
 }
 
 main {
@@ -459,10 +464,13 @@ section a {
 .footer {
   margin-top: auto;
   padding: 10rem;
-  color: #002d5b;
+  color: #f7f9fa;
   display: flex;
   justify-content: center;
-  background-color: #f3f3f3;
+  background-color: #1c2430;
+}
+.footer a {
+  color: #f3f3f3;
 }
 
 /*# sourceMappingURL=style.css.map */

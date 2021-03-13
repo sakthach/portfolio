@@ -81,7 +81,10 @@ header {
   .header_content_second {
     img {
       width: 45rem;
+      width: 45rem;
+      border-radius: 50%;
     }
+    border-radius: 20px;
   }
 }
 main {
@@ -141,8 +144,11 @@ section {
 .footer {
   margin-top: auto;
   padding: 10rem;
-  color: #002d5b;
+  color: #f7f9fa;
   display: flex;
   justify-content: center;
-  background-color: #f3f3f3;
+  background-color: #1c2430;
+  a {
+    color: #f3f3f3;
+  }
 }
