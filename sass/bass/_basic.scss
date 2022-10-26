@@ -144,9 +144,13 @@ section {
   color: #f7f9fa;
   display: flex;
   justify-content: center;
-  background-color: #3a3939;
-  a {
+  background-color: #333;
+  h3 {
     color: #f3f3f3;
+    background-color: rgb(8, 0, 0);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 15px;
   }
 }
 
