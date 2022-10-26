@@ -87,6 +87,7 @@ header {
       font-family: Rufina;
       font-weight: 600;
       margin-top: 3rem;
+      text-align: center;
     }
     p {
       color: #002d5b;
@@ -158,5 +159,18 @@ section {
   }
   .header_content_second {
     margin-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header_content {
+    h3 {
+      font-size: 2rem !important;
+    }
+    img {
+      width: 20rem !important;
+      height: 20rem !important;
+      border-radius: 100%;
+    }
   }
 }

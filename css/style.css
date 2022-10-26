@@ -405,6 +405,7 @@ header {
   font-family: Rufina;
   font-weight: 600;
   margin-top: 3rem;
+  text-align: center;
 }
 .header_content .header_content_second p {
   color: #002d5b;
@@ -478,6 +479,16 @@ section a {
 
   .header_content_second {
     margin-top: 3rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header_content h3 {
+    font-size: 2rem !important;
+  }
+  .header_content img {
+    width: 20rem !important;
+    height: 20rem !important;
+    border-radius: 100%;
   }
 }
 
