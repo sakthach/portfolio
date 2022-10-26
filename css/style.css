@@ -331,7 +331,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Open Sans", sans-serif;
-  background-color: #f0f2f5;
+  background-color: #f6f6f6;
 }
 
 .wrapper {
@@ -347,11 +347,10 @@ body {
 
 img {
   max-width: 100%;
-  min-height: auto;
 }
 
 header {
-  background-color: #f9f9f9;
+  background-color: #fff;
 }
 
 .header_content {
@@ -362,20 +361,20 @@ header {
   padding-left: 10rem;
   padding-right: 10rem;
 }
+.header_content .header_content_first {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .header_content .header_content_first h1 {
   margin: 0;
   color: #002d5b;
   font-family: Rufina;
-  font-size: 5rem;
-}
-.header_content .header_content_first h2 {
-  color: #9e1c36;
-  font-size: 3rem;
-  font-family: Rufina;
-  font-weight: 600;
+  font-size: 4rem;
 }
 .header_content .header_content_first h3 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-family: Rufina;
   color: #002d5b;
 }
@@ -388,20 +387,29 @@ header {
   border-radius: 25px;
   text-align: center;
 }
-.header_content .header_content_first p {
-  margin-top: 1rem;
-  color: #002d5b;
-  font-size: 2.5rem;
-  font-family: Rufina;
-  font-weight: 600;
-}
 .header_content .header_content_second {
-  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
 }
 .header_content .header_content_second img {
-  width: 45rem;
-  width: 45rem;
-  border-radius: 50%;
+  width: 25rem;
+  height: 25rem;
+  border-radius: 100%;
+}
+.header_content .header_content_second .byuh {
+  color: #9e1c36;
+  font-size: 3rem;
+  font-family: Rufina;
+  font-weight: 600;
+  margin-top: 3rem;
+}
+.header_content .header_content_second p {
+  color: #002d5b;
+  font-size: 2rem;
+  font-family: Rufina;
 }
 
 main {
@@ -413,18 +421,6 @@ main .main_content {
   padding: 5rem;
   margin-left: 7.2rem;
   justify-content: space-around;
-}
-main .html {
-  color: #dd4b25;
-}
-main .css {
-  color: #254bdd;
-}
-main .js {
-  color: #efd81d;
-}
-main .php {
-  color: #7377ad;
 }
 
 section {
@@ -448,29 +444,41 @@ section a {
   font-size: 2rem;
 }
 
-.keep_learning {
-  padding-left: 15rem;
-  margin-bottom: 10rem;
+.project {
+  padding: 5rem;
+  display: flex;
 }
-.keep_learning h1 {
-  color: #002d5b;
-  margin-top: 0;
-  font-size: 4rem;
-  font-weight: 700;
-  font-family: Rufina;
+.project h3 {
+  font-size: 3rem;
+}
+.project ul {
   margin-bottom: 2rem;
 }
 
 .footer {
   margin-top: auto;
-  padding: 10rem;
+  padding: 2rem;
   color: #f7f9fa;
   display: flex;
   justify-content: center;
-  background-color: #1c2430;
+  background-color: #3a3939;
 }
 .footer a {
   color: #f3f3f3;
+}
+
+@media screen and (max-width: 800px) {
+  .header_content {
+    padding-top: 5rem;
+    flex-direction: column;
+  }
+  .header_content h1 {
+    text-align: center;
+  }
+
+  .header_content_second {
+    margin-top: 3rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
